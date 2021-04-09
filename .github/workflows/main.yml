@@ -43,10 +43,7 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       
       - name: build
-        run: |
-          cl /EHsc Ex01.cpp 
-          echo 'OK'
-          Ex01.cpp
+        run: cl /EHsc Ex01.cpp /out:Ex01.exe
     
     
     
