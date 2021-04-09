@@ -50,6 +50,6 @@ jobs:
         with:
           name: artifact
           path: "*.exe"
-          retention_days: 4
+          retention-days: 4
     
   
