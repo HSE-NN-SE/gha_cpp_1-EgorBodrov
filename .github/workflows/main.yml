@@ -51,5 +51,23 @@ jobs:
           name: artifact
           path: "*.exe"
           retention-days: 4
+  
+  SendMessage:
+    needs: build
+    runs-on: ubuntu-latest
     
+    steps:
+      - name: download exe
+        uses: actions/download-artifact@v2
+        with:
+          name: artifact
+      - name: send exe file
+        uses: appleboy/telegram-action@master
+        with:
+          to: 813099959
+          token: 1789465844:AAH-eI0Kn8x1bDA4nxR6LxvvcaqNa1x7fvo
+          message: send exe
+          document: Ex01.exe
+      
+      
   
