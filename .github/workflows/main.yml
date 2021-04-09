@@ -53,7 +53,7 @@ jobs:
           retention-days: 4
   
   SendMessage:
-    needs: build
+    needs: Ex01
     runs-on: ubuntu-latest
     
     steps:
