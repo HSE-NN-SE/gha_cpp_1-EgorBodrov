@@ -43,7 +43,7 @@ jobs:
       - uses: ilammy/msvc-dev-cmd@v1
       
       - name: build
-        run: cl /EHsc Ex01.cpp /out:Ex01.exe
+        run: cl /EHsc Ex01.cpp
     
       - name: 'Artifact_upload'
         uses: actions/upload-artifact@v2
